@@ -1,5 +1,9 @@
 import { FaCircle } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 function App() {
 
@@ -138,34 +142,32 @@ function App() {
             <p className="text-2xl font-bold text-white">
               CS — Ticket System
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint, obcaecati fugiat cumque autem consequatur veniam. Dignissimos amet reprehenderit nihil quaerat, eaque, neque aut earum dolore est repellat commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore culpa rerum veniam quae quidem minima consectetur voluptatibus minus similique sunt asperiores magni dolores quod error, amet fugiat. Est, suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint, obcaecati fugiat cumque autem consequatur veniam. Dignissimos amet reprehenderit nihil quaerat, eaque, neque aut earum dolore est repellat commodi modi. Lorem ipsum dolor s!</p>
           </aside>
           <nav>
+            <h6 className="text-xl font-medium text-white">Company</h6>
+            <a className="link link-hover ">About Us</a>
+            <a className="link link-hover">Contact Saled</a>
+            <a className="link link-hover">Our Mission</a>
+          </nav>
+          <nav>
             <h6 className="text-xl font-medium text-white">Services</h6>
-            <a className="link link-hover ">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <a className="link link-hover">Customer Stories</a>
+            <a className="link link-hover">Products & Services</a>
+            <a className="link link-hover">Download Apps</a>
           </nav>
           <nav>
-            <h6 className=" font-medium text-white">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <h6 className="text-xl font-medium text-white">Information</h6>
+            <a className="link link-hover">Privacy Policy</a>
+            <a className="link link-hover">Terms & Conditions</a>
+            <a className="link link-hover">Join Us</a>
           </nav>
           <nav>
-            <h6 className="text-md font-medium text-white">Legal</h6>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
-          </nav>
-          <nav>
-            <h6 className="footer-title text-white">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <h6 className="text-xl font-medium text-white">Social Links</h6>
+            <a className="link link-hover flex items-center gap-1"><FaXTwitter />@CS — Ticket System</a>
+            <a className="link link-hover flex items-center gap-1"><FaLinkedin />@CS — Ticket System</a>
+            <a className="link link-hover flex items-center gap-1"><FaFacebook />@CS — Ticket System</a>
+            <a className="link link-hover flex items-center gap-1"> <IoIosMail />support@cst.com</a>
           </nav>
         </footer>
       </footer>
