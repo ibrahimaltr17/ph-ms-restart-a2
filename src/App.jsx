@@ -59,13 +59,13 @@ function App() {
       </header>
 
       <main className="max-w-[1440px] p-4 bg-gray-100">
-        <div className="flex">
+        <div className="flex flex-col-revers lg:flex-row gap-6">
           {/* Tickets Container */}
-          <div className=" w-[70%] border-2">
-            <h4 className="text-lg font-medium">Customer Tickets</h4>
-            <div className="grid grid-cols-2 gap-3">
+          <div className=" lg:w-[70%]">
+            <h4 className="text-2xl my-2 font-medium">Customer Tickets</h4>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {/* card */}
-              <div className="border-2 p-4 bg-white rounded-b-sm space-y-3">
+              <div className=" p-4 bg-white rounded-sm space-y-3 shadow-sm">
                 <div className="flex justify-between">
                   <p className="font-medium">Login Issues - Can't Access Account</p>
                   <div class="badge badge-soft badge-success"><FaCircle /> Success</div>
@@ -84,7 +84,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="border-2 p-4 bg-white rounded-b-sm space-y-3">
+              <div className=" p-4 bg-white rounded-sm space-y-3">
                 <div className="flex justify-between">
                   <p className="font-medium">Login Issues - Can't Access Account</p>
                   <div class="badge badge-soft badge-success"><FaCircle /> Success</div>
@@ -105,12 +105,70 @@ function App() {
               </div>
             </div>
           </div>
-          {/*  */}
-          <div className=" w-[30%] border-2">
-
+          {/* Task Container */}
+          <div className=" lg:w-[30%] space-y-10">
+            {/* Task Status */}
+            <div>
+              <h4 className="text-2xl my-2 font-medium">Task Status</h4>
+              <div>
+                <div className="p-4 rounded-sm bg-white space-y-4 shadow-sm">
+                  <h4 className="font-medium">Payment Failed- card Declined</h4>
+                  <button className="btn bg-[#02A53B] text-white font-medium w-full">Complete</button>
+                </div>
+                <p className="text-[#627382] text-sm">Select a ticket to add to Task Status</p>
+              </div>
+            </div>
+            {/* Resolved Task */}
+            <div>
+              <h4 className="text-2xl my-2 font-medium">Resolved Task</h4>
+              <div>
+                <div className="px-4 py-5 rounded-sm space-y-4 shadow-sm bg-[#E0E7FF]">
+                  <p className="font-medium">Incorrect Billing Address</p>
+                </div>
+                <p className="text-[#627382] text-sm">No resolved tasks yet.</p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
+
+      <footer>
+        <footer className="footer sm:footer-horizontal bg-black  p-10 text-[#A1A1AA]">
+          <aside className="max-w-[350px]">
+            <p className="text-2xl font-bold text-white">
+              CS — Ticket System
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint, obcaecati fugiat cumque autem consequatur veniam. Dignissimos amet reprehenderit nihil quaerat, eaque, neque aut earum dolore est repellat commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore culpa rerum veniam quae quidem minima consectetur voluptatibus minus similique sunt asperiores magni dolores quod error, amet fugiat. Est, suscipit!</p>
+          </aside>
+          <nav>
+            <h6 className="text-xl font-medium text-white">Services</h6>
+            <a className="link link-hover ">Branding</a>
+            <a className="link link-hover">Design</a>
+            <a className="link link-hover">Marketing</a>
+            <a className="link link-hover">Advertisement</a>
+          </nav>
+          <nav>
+            <h6 className=" font-medium text-white">Company</h6>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press kit</a>
+          </nav>
+          <nav>
+            <h6 className="text-md font-medium text-white">Legal</h6>
+            <a className="link link-hover">Terms of use</a>
+            <a className="link link-hover">Privacy policy</a>
+            <a className="link link-hover">Cookie policy</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title text-white">Company</h6>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press kit</a>
+          </nav>
+        </footer>
+      </footer>
     </>
   )
 }
