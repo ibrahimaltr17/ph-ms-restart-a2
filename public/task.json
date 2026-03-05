@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User unable to login with correct credentials.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Password Reset Not Working",
+    "description": "Password reset email not received.",
+    "customer": "Sarah Smith",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 3,
+    "title": "Payment Failed",
+    "description": "Transaction failed during checkout process.",
+    "customer": "Michael Brown",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 4,
+    "title": "Slow Website Performance",
+    "description": "Website loads very slowly on mobile devices.",
+    "customer": "Emily Davis",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 5,
+    "title": "Profile Update Error",
+    "description": "User cannot update profile information.",
+    "customer": "David Wilson",
+    "priority": "Low",
+    "status": "open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 6,
+    "title": "Order Not Found",
+    "description": "Customer cannot find their recent order.",
+    "customer": "Olivia Taylor",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 7,
+    "title": "App Crashing",
+    "description": "Mobile application crashes after login.",
+    "customer": "James Anderson",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 8,
+    "title": "Notification Not Received",
+    "description": "User not receiving push notifications.",
+    "customer": "Sophia Martinez",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 9,
+    "title": "Incorrect Billing Amount",
+    "description": "Customer charged incorrect subscription amount.",
+    "customer": "William Thomas",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 10,
+    "title": "Account Suspension",
+    "description": "User account suspended without clear reason.",
+    "customer": "Isabella Garcia",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 11,
+    "title": "Image Upload Failed",
+    "description": "Unable to upload profile image.",
+    "customer": "Daniel Harris",
+    "priority": "Low",
+    "status": "open",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 12,
+    "title": "Search Function Not Working",
+    "description": "Search results not displaying correctly.",
+    "customer": "Mia Clark",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 13,
+    "title": "Subscription Cancellation Issue",
+    "description": "User unable to cancel subscription plan.",
+    "customer": "Ethan Lewis",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 14,
+    "title": "Verification Email Not Sent",
+    "description": "Email verification not received after signup.",
+    "customer": "Charlotte Walker",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 15,
+    "title": "Dashboard Data Missing",
+    "description": "Important data not showing on dashboard.",
+    "customer": "Alexander Hall",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-08"
+  },
+  {
+    "id": 16,
+    "title": "Coupon Code Invalid",
+    "description": "Applied coupon code showing invalid error.",
+    "customer": "Amelia Allen",
+    "priority": "Low",
+    "status": "open",
+    "createdAt": "2026-03-08"
+  },
+  {
+    "id": 17,
+    "title": "Language Change Not Saving",
+    "description": "Selected language resets after refresh.",
+    "customer": "Benjamin Young",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-09"
+  },
+  {
+    "id": 18,
+    "title": "Chat Support Not Responding",
+    "description": "Live chat support not replying.",
+    "customer": "Harper King",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-09"
+  },
+  {
+    "id": 19,
+    "title": "Two-Factor Authentication Error",
+    "description": "2FA code not verifying correctly.",
+    "customer": "Lucas Wright",
+    "priority": "Medium",
+    "status": "open",
+    "createdAt": "2026-03-10"
+  },
+  {
+    "id": 20,
+    "title": "Data Sync Problem",
+    "description": "Data not syncing between devices.",
+    "customer": "Ella Scott",
+    "priority": "High",
+    "status": "open",
+    "createdAt": "2026-03-10"
+  }
+]
