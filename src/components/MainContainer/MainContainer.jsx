@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
+import { toast } from "react-toastify";
 
 const MainContainer = ({ taskPromise, setInProgressCount, setResolvedCount }) => {
 
@@ -12,22 +13,16 @@ const MainContainer = ({ taskPromise, setInProgressCount, setResolvedCount }) =>
 
     // Click Ticket Card
     const handleAddToProgress = (task) => {
-
-        // prevent duplicate adding
         const alreadyExists = inProgress.find(t => t.id === task.id);
         if (alreadyExists) return;
-
-        // update status in ticket list
         const updatedTickets = tickets.map(t =>
             t.id === task.id ? { ...t, status: "in-progress" } : t
+            
         );
 
         setTickets(updatedTickets);
-
-        // add to inProgress section
         setInProgress([...inProgress, { ...task, status: "in-progress" }]);
-
-        // update banner count
+        toast.info(`${task.title} added to In Progress`)
         setInProgressCount(prev => prev + 1);
     };
 
@@ -36,17 +31,14 @@ const MainContainer = ({ taskPromise, setInProgressCount, setResolvedCount }) =>
 
         const remaining = inProgress.filter(t => t.id !== task.id);
         setInProgress(remaining);
-
         setResolved([...resolved, task]);
 
-        // update ticket status to resolved
         const updatedTickets = tickets.map(t =>
             t.id === task.id ? { ...t, status: "resolved" } : t
         );
 
         setTickets(updatedTickets);
-
-        // update banner counts
+        toast.success(`${task.title} marked as Resolved`);
         setInProgressCount(prev => prev - 1);
         setResolvedCount(prev => prev + 1);
     };

@@ -3,6 +3,8 @@ import Banner from "./components/Banner/Banner";
 import MainContainer from "./components/MainContainer/MainContainer";
 import Footer from "./components/Footer/Footer";
 import { Suspense, useState } from "react";
+import { ToastContainer, } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const fetchTask = async () => {
   const res = await fetch('/task.json')
@@ -40,6 +42,19 @@ function App() {
         </Suspense>
 
       </main>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
 
       <footer className="bg-black">
         <Footer />
